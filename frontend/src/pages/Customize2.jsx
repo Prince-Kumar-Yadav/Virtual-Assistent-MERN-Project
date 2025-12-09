@@ -19,8 +19,7 @@ function Customize2() {
             }else{
                 formData.append("imageUrl",selectedImage)
             }
-            // api/user/update
-            const result=await axios.post(`${serverUrl}/https://virtual-assistent-mern-project.onrender.com`,formData,{withCredentials:true})
+            const result=await axios.post(`${serverUrl}/api/user/update`,formData,{withCredentials:true})
 setLoading(false)
             console.log(result.data)
             setUserData(result.data)
