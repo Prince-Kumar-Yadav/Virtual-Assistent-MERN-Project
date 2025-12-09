@@ -18,7 +18,8 @@ const [err,setErr]=useState("")
     setErr("")
     setLoading(true)
 try {
-  let result=await axios.post(`${serverUrl}/api/auth/signin`,{
+  // api/auth/signin
+  let result=await axios.post(`${serverUrl}/https://virtual-assistent-mern-project.onrender.com`,{
    email,password
   },{withCredentials:true} )
  setUserData(result.data)
